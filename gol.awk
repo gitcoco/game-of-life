@@ -9,15 +9,15 @@ BEGIN {
     while (1) {
         next_state()
         print_()
-        for (i = 0; i < 1000000; i++)      # sleep
+        for (i = 0; i < 1000000; i++);      # sleep
     }
 }
 
 function init() {
-    srand
+    srand()
     for (i = 0; i < w; i++)
         for (j = 0; j < w; j++)
-            map[i, j] = (rand < prob) ? 1 : 0;
+            map[i, j] = (rand() < prob) ? 1 : 0;
 }
 
 
