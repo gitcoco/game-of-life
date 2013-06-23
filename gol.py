@@ -18,8 +18,8 @@ class gol:
     def print_(self):
         for i in range(self._w):
             for j in range(self._w):
-                print ' X'[self.get(i, j)],
-            print ""
+                print (' X'[self.get(i, j)], end=" ")
+            print ("")
 
     def neighbors(self, x, y):
         dirs = [(-1, -1), (0, -1), (1, -1),
@@ -51,9 +51,9 @@ try:
     while 1:
         game.next_state()
         game.print_()
-        print "="*60
+        print ("="*60)
         time.sleep(0.1)
 
 except KeyboardInterrupt:
-    print "bye"
+    print ("bye")
 
