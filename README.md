@@ -13,6 +13,10 @@ Game of life is one of my favorite computer game, I write it in some programming
 
     gol.c
 
+- Lua
+
+    gol.lua
+
 - Perl
 
     gol.pl
